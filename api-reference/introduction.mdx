@@ -1,33 +1,28 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Introduction"
+description: "QaslyLabs API — automate discovery and retrieve results"
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+Use the QaslyLabs API to manage asset groups, trigger discovery, and pull findings.
 
-## Welcome
+## Base URL
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
-
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+```bash
+https://api.qaslylabs.xyz/v1
+```
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All requests require Bearer token authentication:
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+```bash
+Authorization: Bearer YOUR_QASLYLABS_API_TOKEN
 ```
+
+<Note>
+Generate or revoke tokens in <code>Settings → API Keys</code>.
+</Note>
+
+<Card title="OpenAPI spec" icon="file-code" href="/api-reference/openapi.json">
+Import into your tools to explore and test endpoints.
+</Card>

@@ -1,4 +1,19 @@
 ---
-title: 'Create Plant'
-openapi: 'POST /plants'
+title: "Create Asset Group"
+description: "Create a new asset discovery group"
 ---
+
+<Endpoint method="POST" url="/asset-groups">
+  <Request>
+    <Body>
+      <Param name="name" type="string" required>Group name, e.g. <code>example.com</code></Param>
+      <Param name="domains" type="string[]" required>Domains to discover</Param>
+      <Param name="ipRanges" type="string[]" required>IP ranges in CIDR</Param>
+    </Body>
+  </Request>
+  <Response status={201}>
+    <Field name="id" type="string" />
+    <Field name="name" type="string" />
+    <Field name="status" type="string" />
+  </Response>
+</Endpoint>

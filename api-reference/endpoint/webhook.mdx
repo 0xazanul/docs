@@ -1,4 +1,24 @@
 ---
-title: 'New Plant'
-openapi: 'WEBHOOK /plant/webhook'
+title: "Webhook: Finding Created"
+description: "Receive alerts when new findings are detected"
 ---
+
+<Endpoint method="POST" url="https://your-webhook-url">
+  <Request>
+    <Body>
+      <Param name="event" type='"finding.created"'></Param>
+      <Param name="id" type="string" />
+      <Param name="severity" type='"critical" | "high" | "medium" | "low"' />
+      <Param name="assetGroupId" type="string" />
+      <Param name="service" type="string" />
+      <Param name="title" type="string" />
+      <Param name="description" type="string" />
+      <Param name="recommendation" type="string" />
+      <Param name="timestamp" type="string" />
+    </Body>
+  </Request>
+</Endpoint>
+
+<Note>
+Configure under <code>Settings → Notifications → Webhook</code>.
+</Note>

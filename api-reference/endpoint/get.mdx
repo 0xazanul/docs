@@ -1,4 +1,14 @@
 ---
-title: 'Get Plants'
-openapi: 'GET /plants'
+title: "Get Asset Group"
+description: "Retrieve an asset group and latest discovery summary"
 ---
+
+<Endpoint method="GET" url="/asset-groups/{groupId}">
+  <Response status={200}>
+    <Field name="id" type="string" />
+    <Field name="name" type="string" />
+    <Field name="services" type="number" />
+    <Field name="findings" type="Finding[]" />
+    <Field name="lastUpdated" type="string" />
+  </Response>
+</Endpoint>

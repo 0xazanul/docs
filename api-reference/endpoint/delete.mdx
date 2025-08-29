@@ -1,4 +1,10 @@
 ---
-title: 'Delete Plant'
-openapi: 'DELETE /plants/{id}'
+title: "Delete Asset Group"
+description: "Remove an asset group and its schedule"
 ---
+
+<Endpoint method="DELETE" url="/asset-groups/{groupId}">
+  <Response status={204}>
+    <Field name="success" type="boolean" />
+  </Response>
+</Endpoint>
