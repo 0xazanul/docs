@@ -1,4 +1,5 @@
 {
+  "theme": "mint",
   "name": "QaslyLabs",
   "logo": {
     "light": "/logo/light.svg",
@@ -35,7 +36,7 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": ["index", "quickstart", "development"]
+            "pages": ["index", "quickstart"]
           },
           {
             "group": "Product",
