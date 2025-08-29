@@ -1,97 +1,50 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "QaslyLabs — Secure Everything"
+description: "Advanced vulnerability scanning for modern applications. Clean. Fast. Secure."
 ---
 
-## Setting up
-
-Get your documentation site up and running in minutes.
-
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
-
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
+<Hero>
+  <Logo src="/logo/dark.svg" alt="QaslyLabs" />
+  <Title>Secure Everything</Title>
+  <Subtitle>Advanced vulnerability scanning for modern applications. Built for developers who care about security.</Subtitle>
+  <ButtonGroup>
+    <Button href="/quickstart" icon="rocket">Get Started</Button>
+    <Button href="/product/dashboard" variant="secondary" icon="gauge">Explore the Dashboard</Button>
+  </ButtonGroup>
+</Hero>
 
 <Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+  <Card title="Asset Discovery" icon="radar" href="/guides/asset-discovery">
+    Automatically discover domains, subdomains, and exposed services. Clean inventory = faster fixes.
   </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
+  <Card title="Continuous Scanning" icon="repeat" href="/product/assets">
+    Run scheduled scans and track drift. See what changed and what’s vulnerable.
   </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+  <Card title="Actionable Findings" icon="bug" href="/guides/remediation">
+    Prioritized, deduplicated, and developer‑ready. Fix faster with context and steps to remediate.
   </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
+  <Card title="Integrations & Alerts" icon="bell" href="/product/settings/notifications">
+    Email, webhooks, and custom rules so the right team gets the right alert.
   </Card>
 </Columns>
 
-## Create beautiful pages
+## Start here
 
-Everything you need to create world-class documentation.
+<Card title="Quickstart" icon="rocket" href="/quickstart" horizontal>
+  From sign up to your first scan in under 5 minutes.
+</Card>
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
+## Product areas
+
+<Columns cols={3}>
+  <Card title="Auth" icon="right-to-bracket" href="/product/auth">Sign up, sign in, SSO</Card>
+  <Card title="Dashboard" icon="gauge" href="/product/dashboard">KPIs and recent activity</Card>
+  <Card title="Assets" icon="server" href="/product/assets">Groups, services, status</Card>
+  <Card title="Settings" icon="gear" href="/product/settings/overview">Profiles, domains, notifications</Card>
+  <Card title="Domains" icon="globe" href="/product/settings/domains">Verify & manage domains</Card>
+  <Card title="Notifications" icon="bell" href="/product/settings/notifications">Emails & webhooks</Card>
 </Columns>
 
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+<Note>
+© 2025 QaslyLabs • docs at <code>docs.qaslylabs.xyz</code>
+</Note>

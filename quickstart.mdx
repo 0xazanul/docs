@@ -1,80 +1,73 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "From account to your first vulnerability scan in minutes"
 ---
 
-## Get started in three steps
+## Prerequisites
 
-Get your documentation site running locally and make your first customization.
+- A verified email address
+- One or more domains or IP ranges you own
+- Optional: API access token for automation
 
-### Step 1: Set up your local environment
+## Step 1 — Create your account
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+<CardGroup cols={2}>
+  <Card title="Create account" icon="user-plus" href="https://app.qaslylabs.xyz/signup">
+    Enter full name, email, and password. Agree to Terms and Privacy.
+  </Card>
+  <Card title="Sign in" icon="right-to-bracket" href="https://app.qaslylabs.xyz/signin">
+    Use your email and password, or continue with Google.
+  </Card>
+</CardGroup>
 
-### Step 2: Deploy your changes
+<Tip>
+Welcome back screen automatically redirects you to the dashboard after sign in.
+</Tip>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+## Step 2 — Add an asset group
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+<Steps>
+  <Step title="Open Assets">
+    Go to <code>Dashboard → Assets</code> and click <b>Start Discovery</b>.
+  </Step>
+  <Step title="Name the group">
+    Example: <code>example.com</code> or <code>production‑public</code>.
+  </Step>
+  <Step title="Add scope">
+    Add domains (e.g. <code>example.com</code>) and/or IP ranges (e.g. <code>203.0.113.0/24</code>).
+  </Step>
+  <Step title="Run discovery">
+    Start discovery to enumerate subdomains and open services.
+  </Step>
+</Steps>
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+## Step 3 — Review results
 
-### Step 3: Go live
+<Columns cols={2}>
+  <Card title="Services & Findings" icon="list">
+    View <b>Total services</b>, <b>duration</b>, and <b>last updated</b>. Drill into findings by severity.
+  </Card>
+  <Card title="Filter & Search" icon="filter">
+    Search across asset groups, filter by severity, service type, and timeframe.
+  </Card>
+</Columns>
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+## Step 4 — Configure notifications
+
+Go to <code>Settings → Notifications</code> and enable:
+
+- Email notifications for new critical/high findings
+- Webhook notifications to your security automations
+
+<Note>
+You can add <b>Domains</b> under <code>Settings → Domains</code> to verify ownership and enable domain‑scoped controls.
+</Note>
 
 ## Next steps
 
-Now that you have your docs running, explore these key features:
-
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="Dashboard" icon="gauge" href="/product/dashboard">KPIs and trends</Card>
+  <Card title="Assets" icon="server" href="/product/assets">Groups, services, findings</Card>
+  <Card title="Domains" icon="globe" href="/product/settings/domains">Verify and manage domains</Card>
+  <Card title="API" icon="terminal" href="/api-reference/introduction">Automate discovery & retrieval</Card>
 </CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
