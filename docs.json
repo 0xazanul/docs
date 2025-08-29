@@ -4,17 +4,13 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "href": "/"
+    "href": "https://docs.qaslylabs.xyz/"
   },
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#0EA5E9",
     "light": "#22D3EE",
-    "dark": "#0284C7",
-    "background": {
-      "light": "#FFFFFF",
-      "dark": "#0B1220"
-    }
+    "dark": "#0284C7"
   },
   "topbarLinks": [
     { "name": "Website", "url": "https://qaslylabs.xyz" },
